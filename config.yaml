@@ -1,0 +1,21 @@
+# This is the YAML config file to make this a little more abstractish
+
+# Stuff about you.
+user_config:
+  # Your Name. This will be used for the page title
+  name: 'Anurag Mohanty'
+
+  # The file you want to parse to be your resume
+  # Must be a format supported by github-markup
+  file: 'resume.md'
+
+  # A picture of you. Should be a complete url
+  pic: 'https://lh3.googleusercontent.com/-eANPtaczYO8/Vbun951Fd6I/AAAAAAAABoY/MrxGBWgc0LQ/w280-h280-p/avatar.png'
+
+  # The google analytics key you wish to use.
+  gkey: 'UA-66028832-1'
+
+# For github pages to work, this needs to be the GitHub repository this file is
+# stored in.
+github:
+  remote: 'git@github.com:tevren/resume.git'
