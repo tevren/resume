@@ -29,6 +29,7 @@
 21. Squid
 22. Kickstart
 23. Mcollective
+24. RabbitMQ
 
 -----
 ### Experience
