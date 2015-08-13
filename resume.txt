@@ -7,35 +7,39 @@
 
 -----
 ### Technical
-1. Chef
-2. Puppet 
-3. Ruby
-4. Perl
-5. Git
-6. MySQL
-7. MongoDB
-8. Graphite
-9. Nagios
-10. ELK
-11. Play
-12. Ruby on Rails
-13. Sinatra
-14. Flask
-15. Dropwizard
-16. Jenkins
-17. Artifactory
-  
+1. AWS
+2. Amazon Web Stack
+3. Chef
+4. Puppet 
+5. Ruby
+6. Perl
+7. Git
+8. MySQL
+9. MongoDB
+10. Graphite
+11. Nagios
+12. ELK
+13. Play
+14. Ruby on Rails
+15. Sinatra
+16. Flask
+17. Dropwizard
+18. Jenkins
+19. Artifactory
+20. Squid
+
 -----
 ### Experience
 
 **Amplify Education** _December 2012 to Present_</br>
 *Systems Engineer*</br>
-Responsiblities included maintaining and monitoring hundreds of servers that communicated with thousands of tablets.</br>
+Responsiblities included maintaining and monitoring hundreds of servers on AWS that communicated with 20,000 tablets.</br>
 Worked closely with developers to create and maintain a build pipline.</br>
-Wrote guidelines and documentation on application configuration and monitoring.
+Wrote guidelines and documentation on application configuration and monitoring.</br>
+Designed and built content filtering farm on AWS. At its peak 20,000 tablets connected to the farm via VPN and had their traffic routed by Squid to https and http filtering applications.</br>
 Collobrated with developers to write Chef cookbooks to ensure applications were properly configured.
 Worked closly with developers to resolve any outages or bugs reported to Tier 3.</br>
-**Technical Environment:** Chef, Java, Play, Ruby, Git, Stash, Jenkins, Artifactory, Graphite, Nagios, ELK
+**Technical Environment:** AWS, Chef, Java, Play, Ruby, Git, Stash, Jenkins, Artifactory, Graphite, Nagios, ELK
   
 **Columbia University Libraries** _January 2010 to December 2012_</br>
 *Systems Engineer*</br> 
