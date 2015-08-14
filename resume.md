@@ -80,11 +80,11 @@ Wrote programs in VB.Net to automate the process of transitioning from paper rec
 
 * **Biffbot**</br>
   <a href=https://github.com/tevren/biffbot class=not-printed>Biffbot</a>
-  is a ruby libary for the <a href=https://www.diffbot.com class=not-printed>Diffbot</a> API.
+  is a ruby libary for the <a href=https://www.diffbot.com >Diffbot</a> API.
 
 * **RubySpark**</br>
   <a href=https://github.com/tevren/rubyspark class=not-printed>RubySpark</a>
-  is a ruby port of <a href=http://zachholman.com/spark/ class=not-printed>spark</a>.
+  is a ruby port of <a href=http://zachholman.com/spark/ >spark</a>.
 
 -----
 ### Education
