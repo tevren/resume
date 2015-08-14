@@ -89,6 +89,6 @@ Wrote programs in VB.Net to automate the process of transitioning from paper rec
 -----
 ### Education
 
-**Bachelor of Science in Applied Mathematics** _2004 to 2009_</br>
+**Bachelor of Science in Applied Mathematics** _2004 to 2009_ </br>
   University of Massachusetts at Amherst, Massachusetts
 
