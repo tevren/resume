@@ -8,6 +8,7 @@ gem 'sass'
 gem 'sinatra'
 gem 'thin'
 gem 'rake'
+gem 'pdfkit'
 
 group :development do
   gem 'shotgun'

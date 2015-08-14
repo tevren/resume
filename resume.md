@@ -36,15 +36,15 @@
 
 **Amplify Education** _December 2012 to Present_</br>
 *Systems Engineer*</br>
-Responsibilities included maintaining and monitoring hundreds of servers on AWS that communicated with 20,000 tablets.</br>
+Responsibilities include maintaining and monitoring hundreds of servers on AWS that communicated with 20,000 tablets.</br>
 Maintained Jenkins server and agents, as well as the build pipeline.
 Wrote guidelines and documentation on application configuration and monitoring.</br>
 Designed the AWS architecture, including VPC/subnet layouts.</br>
-Designed Chef Workflow and architecture, once for the Access division, and again for the entire company. The workflow is git-based with Jenkins testing and then deploying our changes to the chef server.</br>
+Designed Chef workflow and architecture, for the Access division, and for the entire company as well. The workflow is git-based with Jenkins testing and deploying changes to the chef server.</br>
 Solved the problem dependency resolution and conflicting cookbook versions by implementing role based cookbooks and moving dependencies from environment files to role cookbooks.</br> 
 Authored Knife plugin to automate node from EC2 and Chef. The plugin schedules downtime in nagios, removes the client from chef, terminates the EC2 instance and cleans up any leftover AWS resources such as Route53 records, EBS volumes AND Elastic IPs.</br>
 Designed criteria for build manifests, essential requirements for applications to be pushed through the build pipeline.</br>
-Designed build pipeline for Java based applications (our ruby stack ran mainly on Jruby). This included designing how applications would be built and tested, and deployment of the built artifacts through the pipeline into production.</br>
+Designed build pipeline for java and ruby web-applications. This included designing how applications would be built and tested, and deployment of the built artifacts through the pipeline into production.</br>
 Worked with developers to on board their applications into the build pipeline. On boarding includes ensuring that ensure dependencies were met, that monitoring criteria, and application configuration guidelines were met.</br>
 Built artifactory architecture which included S3 back-end for storage, and MySQL on RDS as a database, and cross-region Artifactory replication.</br>
 Administered nagios and wrote nagios checks as part of application on-boarding and on-going application monitoring.</br>
@@ -60,7 +60,7 @@ Member of daily on-call rotation that is responsible for resolving outages repor
   
 **Columbia University Libraries** _January 2010 to December 2012_</br>
 *Systems Engineer*</br> 
-Managed all Apple Macintosh environments and educational needs through Columbia University Libraries.</br>
+Managed all Apple Macintosh environments through Columbia University Libraries.</br>
 Wrote Ruby on Rails applications as front-ends to various back-end systems.</br> 
 Documented procedures and best practices for various technical tasks performed by the technology team.</br>
 Wrote Perl scripts to generate reports for librarians.</br> 
