@@ -25,52 +25,45 @@ $font_5: serif;
 @import url(http://fonts.googleapis.com/css?family=Old+Standard+TT);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-.container {
-  width:1000px;
-  zoom: 1;
-  margin: 0 auto;
+body {
+  font-family: $font_0, $font_1, $font_2, $font_3;
+  color: $color_night_rider_approx;
   background-image: url($avatar);
   background-attachment: fixed;
   background-position: left bottom; 
   background-repeat: no-repeat;
-  padding: 0 0 40px 0;
-  // background: $bg;
-  border: solid $link;
-  border-width: 2px 0 0 0;
-  text-align: left;
-  &:before {
-    content: "";
-    display: table;
-  }
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-body {
-  font-family: $font_0, $font_1, $font_2, $font_3;
-  color: $color_night_rider_approx;
   font-weight: 300;
   margin: 0;
 }
+a {
+  color: $link;
+}
 h1 {
   font-family: $font_4, $font_5;
-  margin: 0;
+  margin:0;
+  text-align: left;
+  position: relative;
+  display: block;
   padding: 0;
-  font-size: 36px;
-  letter-spacing: -1px;
+  font-weight: normal;
+  font-size: 44px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   font-weight: normal;
 }
+
 h2 {
   font-family: $font_4, $font_5;
   margin: 0;
-  padding: 0;
+  text-align: left;
+  position: relative;
+  display: block;
   font-size: 18px;
   font-style: italic;
   letter-spacing: -1px;
   font-weight: normal;
 }
+
 h3 {
   font-family: $font_4, $font_5;
   margin: 0;
@@ -82,34 +75,6 @@ h3 {
 h4 {
   font-family: $font_4, $font_5;
 }
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  dl {
-    margin: .3em 0 0;
-    padding: 0;
-    width: 100%;
-    dt {
-      font-family: $font_4, $font_5;
-      font-size: 100%;
-    }
-    dd {
-      margin: 0 0 1em;
-      padding: 0 2em 0 0;
-      font-size: .8em;
-      line-height: 1.5em;
-    }
-  }
-  li {
-    margin: 0;
-    padding: 0;
-    p {
-      margin: 1em 0.5em;
-      line-height: 120%;
-    }
-  }
-}
 .resume {
   position: relative;
   // padding: 10px 20px;
@@ -117,12 +82,29 @@ ul {
   padding: 0 0 40px 0;
   background: #fff;
   text-align: left;
-  width: 800px;
+  width: 50%;
 }
-blockquote {
+.resume h3 {
+  float: left;
+  width: 15%;
+  ~ p {
+    float: left;
+    margin-left: 16%;
+  }
+  + p {
+    margin-left: inherit;
+    float: left;
+    width: 84%;
+  }
+}
+.resume blockquote {
   margin: 0;
   line-height: 1.0em;
+  float: right;
   text-align: right;
+  top: 0px;
+  right: 0px;
+  position: absolute;
   a {
     color: $color_night_rider_approx;
     //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
@@ -137,10 +119,17 @@ blockquote {
     }
   }
 }
-a {
-  color: $link;
+.resume table {
+  border-collapse: collapse;
+  empty-cells: hide;
+  margin: 0 auto;
+  th, td {
+      padding: 0px;
+      text-align: left;
+      width: 30%;
+  }
 }
-hr {
+.resume hr {
   display: block;
   position: relative;
   padding: 0;
@@ -157,11 +146,16 @@ hr {
     margin-top: 32px;
   }
 }
+.resume p {
+  margin: .6em 0;
+  padding: 0;
+  display: block;
+  line-height: 24px;
+}
 p {
   margin: .6em 0 16px;
   padding: 0;
   display: block;
-  font-size: 104%;
   line-height: 24px;
 }
 ol {
@@ -172,37 +166,39 @@ ol {
   li {
     margin: 0 0 0 1em;
     padding: 0;
-    width: 100%;
+    width: 30%;
     float: left;
     list-style: none;
     line-height: 24px;
-    font-size: 14px;
   }
 }
-dl {
-  display: inline-block;
-  width: 75%;
-  margin: 0;
-  padding: 0;
-  dt {
+ul {
+  margin:0;
+  padding:0;
+  list-style: circle;
+  width: 80%;
+  float: right;
+  margin-bottom: 0.15em;
+  li {
+    width: 100%;
+    float: left;
+    margin-bottom: 0.15em;
     margin: 0;
-    padding: 0;
-    font-size: 140%;
-  }
-  dd {
-    margin: 0 0 1.5em;
-    padding: 0;
-    font-size: 80%;
-    line-height: 1.4em;
-  }
-  strong {
-    display: block;
-  }
-  em {
-    display: block;
-    font-size: 110%;
-    margin: .15em 0 .5em;
-    font-style: bold;
+    padding: 0s;
+    p {
+      margin: 1em 0.5em;
+      line-height: 1.5em;
+    }
+  }    
+  dl {
+    dt {
+      font-size: 122%;
+      font-weight: normal;
+      margin-bottom: 0.75em;
+    }
+    dd {
+      padding: 0 4em 0 0;
+    }
   }
 }
 #footer {
@@ -213,210 +209,5 @@ dl {
     text-align: center;
   }
 }
-@media screen {
-  body {
-    padding: 0;
-  }
-  .container {
-    width: 100%;
-  }
-}
-@media(min-width: 1000px) {
-  .container {
-    width: 100%;
-  }
-  .resume {
-    margin: 0 auto;
-    padding: 40px 50px;
-    width: 912px;
-  }
-  blockquote {
-    top: 40px;
-    right: 50px;
-    position: absolute;
-  }
-  h1 {
-    margin-top: 0;
-    font-size: 44px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: normal;
-  }
-  h2 {
-    text-transform: uppercase;
-    font-style: italic;
-    letter-spacing: 2px;
-    font-weight: normal;
-  }
-  h3 {
-    float: left;
-    width: 16%;
-    ~ p {
-      float: left;
-      margin-left: 16%;
-    }
-    + p {
-      margin-left: inherit;
-      float: left;
-      width: 84%;
-    }
-  }
-  ul {
-    li {
-      width: 28%;
-      float: left;
-    }
-    dl {
-      dt {
-        font-size: 122%;
-        font-weight: normal;
-        margin-bottom: 0.75em;
-      }
-      dd {
-        padding: 0 4em 0 0;
-      }
-    }
-  }
-  ol {
-    float: left;
-    margin: 0.6em 0 0;
-    li {
-      width: 33%;
-      margin: 0;
-      &:nth-child(3n) {
-        width: 34%;
-      }
-      &:nth-child(1) {
-        border-top: none;
-      }
-      &:nth-child(2) {
-        border-top: none;
-      }
-      &:nth-child(3) {
-        border-top: none;
-      }
-    }
-  }
-  dl {
-    margin: 0.5em 0 0;
-    strong {
-      float: right;
-      margin-top: -2em;
-    }
-    em {
-      font-size: 130%;
-      font-style: normal;
-    }
-  }
-}
-@media(max-width: 1000px), print {
-  blockquote {
-    top: 25px;
-    right: 50px;
-    position: absolute;
-  }
-  h1 {
-    margin-top: 0.5em;
-  }
-  ol {
-    margin: 0 0 0 2em;
-    padding-bottom: 0;
-    width: 100%;
-    li {
-      width: 33%;
-      margin: 0;
-      &:nth-child(1) {
-        border-top: none;
-      }
-      &:nth-child(2) {
-        border-top: none;
-      }
-    }
-  }
-  p {
-    margin-left: 25px;
-    font-size: 14px;
-    line-height: 20px;
-    strong {
-      font-size: 17px;
-      line-height: 24px;
-    }
-    em {
-      font-size: 17px;
-      line-height: 24px;
-    }
-  }
-  ul li {
-    width: 33%;
-    float: left;
-  }
-}
 
-@media screen and(max-width: 625px) {
-  ul {
-    li {
-      width: 100%;
-    }
-    a {
-      line-height: 130%;
-    }
-    br:nth-of-type(1) {
-      display: none;
-    }
-  }
-  blockquote {
-    float: right;
-    position: static;
-  }
-  p {
-    margin-left: 5px;
-    font-size: 12px;
-    line-height: 16px;
-    strong {
-      font-size: 14px;
-      line-height: 20px;
-    }
-    em {
-      font-size: 14px;
-      line-height: 20px;
-    }
-  }
-  ol li {
-    width: 50%;
-    margin: 0;
-    font-size: 12px;
-  }
-}
-@media print {
-  .container {
-    border-top: none;
-  }
-  .not-printed {
-    display: none;
-  }
-  a {
-    text-decoration: none;
-    color: $black;
-  }
-  .page-break {
-    page-break-before: always;
-    padding-top: 20px;
-  }
-}
-@page {
-  size: auto;
-  margin: 10mm;
-}
-a[href$='.pdf'] {
-  display: inline-block;
-  background: $color_night_rider_approx;
-  color: $bg;
-  padding: 6px 12px;
-  margin-bottom: 6px;
-  text-decoration: none;
-}
-
-#resume {
-
-}
 
