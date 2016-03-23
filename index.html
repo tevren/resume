@@ -21,8 +21,8 @@
     </script>
   </head>
   <body>
-    <div class="container">
       <div class="resume">
+        
         <h1>Anurag Mohanty</h1>
 
 <h2>Systems Engineer</h2>
@@ -35,99 +35,167 @@
 
 <hr>
 
-<h3>Technical</h3>
+        
+        <h3>Technical</h3>
 
-<ol>
-<li>AWS</li>
-<li>Amazon Web Stack</li>
-<li>Chef</li>
-<li>Puppet </li>
-<li>Ruby</li>
-<li>Perl</li>
-<li>Git</li>
-<li>MySQL</li>
-<li>MongoDB</li>
-<li>RDS</li>
-<li>Graphite</li>
-<li>Nagios</li>
-<li>ELK</li>
-<li>Play</li>
-<li>Ruby on Rails</li>
-<li>Sinatra</li>
-<li>Dropwizard</li>
-<li>Jenkins</li>
-<li>Artifactory</li>
-<li>Squid</li>
-<li>Kickstart</li>
-<li>Mcollective</li>
-<li>RabbitMQ</li>
-</ol>
+<table><thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>AWS</td>
+<td>Ruby</td>
+<td>Ruby on Rails</td>
+<td>Graphite</td>
+</tr>
+<tr>
+<td>Chef</td>
+<td>Bash</td>
+<td>Sinatra</td>
+<td>Nagios</td>
+</tr>
+<tr>
+<td>Puppet</td>
+<td>Perl</td>
+<td>Play Framework</td>
+<td>New Relic</td>
+</tr>
+<tr>
+<td>MySQL</td>
+<td>Mcollective</td>
+<td>Dropwizard</td>
+<td>ELK</td>
+</tr>
+<tr>
+<td>MongoDB</td>
+<td>RabbitMQ</td>
+<td>Kickstart</td>
+<td></td>
+</tr>
+<tr>
+<td>Jenkins</td>
+<td>Squid</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Artifactory</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
 
 <hr>
 
-<h3>Experience</h3>
+        
+        <h3>Experience</h3>
 
 <p><strong>Amplify Education</strong> <em>December 2012 to Present</em></br>
-<em>Systems Engineer</em></br>
-Responsibilities include maintaining and monitoring hundreds of servers on AWS that communicated with 20,000 tablets.</br>
-Maintained Jenkins server and agents, as well as the build pipeline.
-Wrote guidelines and documentation on application configuration and monitoring.</br>
+<em>Systems Engineer</em></p>
+
+<p>Designed deployment pipeline for java and ruby web-applications.</p>
+
+<ul>
+<li>Wrote guidelines and documentation on application configuration and monitoring.</li>
+<li>Designed criteria for build-manifests, which describe set of applications have been tested together.</li>
+<li>Extended mcollective as a deployment mechanism by using RabbitMQ, resulting in dependable and scalable push button deployments.</li>
+<li>Maintained Jenkins server and agents, as well as the deployment pipeline.</li>
+<li>Built Artifactory architecture which included S3 back-end for storage, and MySQL on Amazon RDS as a database, and cross-region Artifactory replication for disaster recovery.</li>
+</ul>
+
+<p>Responsibilities include maintaining and monitoring hundreds of servers on AWS that communicated with 20,000 tablets.</br>
 Designed the AWS architecture, including VPC/subnet layouts.</br>
-Designed Chef workflow and architecture, for the Access division, and for the entire company as well. The workflow is git-based with Jenkins testing and deploying changes to the chef server.</br>
-Solved the problem dependency resolution and conflicting cookbook versions by implementing role based cookbooks and moving dependencies from environment files to role cookbooks.</br> 
-Authored Knife plugin to automate node from EC2 and Chef. The plugin schedules downtime in nagios, removes the client from chef, terminates the EC2 instance and cleans up any leftover AWS resources such as Route53 records, EBS volumes AND Elastic IPs.</br>
-Designed criteria for build manifests, essential requirements for applications to be pushed through the build pipeline.</br>
-Designed build pipeline for java and ruby web-applications. This included designing how applications would be built and tested, and deployment of the built artifacts through the pipeline into production.</br>
-Worked with developers to on board their applications into the build pipeline. On boarding includes ensuring that ensure dependencies were met, that monitoring criteria, and application configuration guidelines were met.</br>
-Built artifactory architecture which included S3 back-end for storage, and MySQL on RDS as a database, and cross-region Artifactory replication.</br>
-Administered nagios and wrote nagios checks as part of application on-boarding and on-going application monitoring.</br>
-Built RabbitMQ cluster and wrote end to end monitoring scripts to ensure the cluster healthy and able to route messages.</br>
-Wrote ruby script to monitor RabbitMQ usage and send usage data to Graphite.</br>
-Administered ElasticSearch cluster which served as back-end to our logging infrastructure.</br>
-Extended mcollective as a deployment mechanism by using RabbitMQ, resulting in dependable and scalable push button deployments across our AWS environments.</br>
-Responsible for in-house CDNs from the imaging process at vendor factories to deployment + maintenance at customers&#39; facilities.</br>
-Designed and built content filtering farm on AWS.</br>
-Collaborated with developers to write Chef cookbooks to ensure applications were properly configured.</br>
-Member of daily on-call rotation that is responsible for resolving outages reported by customers to Tier 3 and of a weekly on-call rotation that is responsible for uptime of critical services.</br>
-<strong>Technical Environment:</strong> AWS, Chef, Java, Play, Ruby, MySQL, Git, Stash, Jenkins, Artifactory, Graphite, Nagios, ELK, Kickstart</p>
+Designed Chef workflow and architecture, for the Access division, and later for the entire company. The workflow is git-based with Jenkins testing and deploying changes to the chef server.</p>
+
+<ul>
+<li>Implemented role cookbooks to manage dependencies at the cookbook level, resulting dependency resolution and cookbook deployment across a growing organization.</li>
+<li>Authored Knife plugin to automate node from EC2 and Chef. The plugin schedules downtime in nagios, removes the client from chef, terminates the EC2 instance and cleans up any leftover AWS resources such as Route53 records, EBS volumes AND Elastic IPs.</li>
+<li>Collaborated with developers to write Chef cookbooks to ensure applications were properly configured.</li>
+<li>Worked with developers to ensure their applications met production readiness requirements in terms of monitoring and configuration.</li>
+</ul>
+
+<p>Administered nagios and wrote nagios checks as part of application on-boarding and on-going application monitoring.</br>
+Built and deployed RabbitMQ infrastructure.</p>
+
+<ul>
+<li>Wrote ruby script that tests end to end availability of RabbitMQ cluster.</li>
+<li>Provided support and expertise to development team in dealing with RabbitMQ.</li>
+<li>Wrote ruby script to monitor RabbitMQ usage and send usage data to Graphite.</li>
+</ul>
+
+<p>Administered ElasticSearch cluster which served as back-end to our logging infrastructure.</br>
+Responsible for in-house appliance from the imaging process at vendor factories to deployment + maintenance at customers&#39; facilities.</br>
+Built HTTP content filtering farm on AWS using dansguardian and squid.</br>
+Member of daily on-call rotation that is responsible for resolving outages reported by customers to Tier 3 and of a weekly on-call rotation that is responsible for uptime of critical services.</p>
+
+<p>Migrated Access division from News Corp Exchange to Google Apps</p>
+
+<ul>
+<li>Worked with key technical staff at News Corp facilitate a smooth transition from Exchange to Google Apps.</li>
+<li>Programmatically tested migration with small batches of users using tools such as GAM. </li>
+</ul>
+
+<p><strong>Technical Environment:</strong> AWS, Chef, Java, Play, JRuby, MySQL, Git, Stash, Jenkins, Artifactory, Graphite, Nagios, ELK, Kickstart.</p>
 
 <p><strong>Columbia University Libraries</strong> <em>January 2010 to December 2012</em></br>
-<em>Systems Engineer</em></br> 
-Managed all Apple Macintosh environments through Columbia University Libraries.</br>
-Wrote Ruby on Rails applications as front-ends to various back-end systems.</br> 
-Documented procedures and best practices for various technical tasks performed by the technology team.</br>
-Wrote Perl scripts to generate reports for librarians.</br> 
+<em>Systems Engineer</em></p>
+
+<p>Managed all Apple Macintosh environments through Columbia University Libraries.</p>
+
+<ul>
+<li>Built Imaging + Deployment pipeline for OSX machines using Deploy Studio.</li>
+<li>Tested and deployed Munki as a solution to manage and update software across environments.</li>
+</ul>
+
+<p>Wrote Ruby on Rails applications as front-ends to various back-end systems.</p>
+
+<ul>
+<li>Created a front-end for Munki so that support engineers can manage software through a web portal.</li>
+<li>Developed an Ruby on Rails application to create help desk tickets. </li>
+</ul>
+
+<p>Documented procedures and best practices for various technical tasks performed by the technology team.</br>
+Wrote Perl scripts to generate reports for librarians.</br>
 Maintained JIRA instance used to track help-desk tickets across Columbia University Libraries.</br>
-<strong>Technical Environment:</strong> Ruby, Ruby on Rails, Perl, JIRA, Oracle Database, Bash, OSX, Munki, Deploy Studio</p>
+<strong>Technical Environment:</strong> Ruby, Ruby on Rails, Perl, JIRA, Oracle Database, Bash, OSX, Munki, Deploy Studio.</br></p>
 
 <p><strong>Columbia University Medical Center</strong> <em>June 2007 to December 2009</em></br>
-<em>Systems Administrator and Programmer</em></br> 
-Authored various patient file management scripts.</br> 
+<em>Systems Administrator and Programmer</em></p>
+
+<p>Authored various patient file management scripts.</br>
 Automated file server backups and data archival. </br>
 Developed VB.NET programs to interface with scanner.</br>
 Wrote programs in VB.Net to automate the process of transitioning from paper records to digital records.</br>
-<strong>Technical Environment:</strong> VBScript, VB.Net, Winbatch, Windows XP</p>
+<strong>Technical Environment:</strong> VBScript, VB.Net, Winbatch, Windows XP.</br></p>
 
 <hr>
 
-<h3>Projects</h3>
+        
+        <h3>Projects</h3>
 
-<ul>
+<ol>
 <li><p><strong>Biffbot</strong></br>
 <a href=https://github.com/tevren/biffbot>Biffbot</a>
 is a ruby libary for the <a href=https://www.diffbot.com >Diffbot</a> API.</p></li>
 <li><p><strong>RubySpark</strong></br>
 <a href=https://github.com/tevren/rubyspark>RubySpark</a>
 is a ruby port of <a href=http://zachholman.com/spark/>spark</a>.</p></li>
-</ul>
+</ol>
 
 <hr>
 
-<h3>Education</h3>
+        
+        <h3>Education</h3>
 
 <p><strong>Bachelor of Science in Applied Mathematics</strong> <em>2004 to 2009</em> </br>
   University of Massachusetts at Amherst, Massachusetts</p>
 
+        
   
         <small class="download not-printed">Download as <a href="resume.txt">plain text</a></small></br>
         <small class="download not-printed">Avatar by <a href="https://psfun.tumblr.com">Jamie Lin</a></small>
