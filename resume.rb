@@ -7,13 +7,6 @@
 configure do
   require 'yaml'
   set :config, YAML.load_file('config.yaml')['user_config']
-
-  require 'sass/plugin/rack'
-  Sass::Plugin.options[:template_location] = "views/css"
-  Sass::Plugin.options[:css_location] = "public/css"
-  Sass::Plugin.options[:style] = :compact
-  Sass::Plugin.options[:always_update] = true
-  use Sass::Plugin::Rack
 end
 
 # Render the main page.
@@ -21,14 +14,10 @@ get '/index.html' do
   rfile = settings.config['file']
   name  = settings.config['name']
   title = "#{name}'s Resume"
-  resume = {}
-  settings.config['resume_order'].each do |section|
-    resume[section] = build_section(section)
-  end
-  # template = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
+  template = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
 
   # template = Tilt.new(rfile)
-  # resume = template.render(File.read(rfile))
+  resume = template.render(File.read(rfile))
   erb :index, :locals => {
     :title => title,
     :resume => resume,
@@ -47,10 +36,4 @@ end
 get '/resume.txt' do
   content_type 'text/plain', :charset => 'utf-8'
   File.read(settings.config['file'])
-end
-
-def build_section(section)
-  template = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
-  resume_directory = settings.config['directory']
-  resume_section = template.render(File.read(File.join(File.dirname(__FILE__),resume_directory,"#{section}.md")))
 end

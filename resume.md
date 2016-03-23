@@ -22,7 +22,7 @@
 
 ### Experience
 
-#### Amplify Education _December 2012 to Present_</br>
+#### Amplify Education _December 2012 to Present_
 *Systems Engineer*
 
 Designed deployment pipeline for java and ruby web-applications.
@@ -61,7 +61,7 @@ Migrated Access division from News Corp Exchange to Google Apps
 
 **Technical Environment:** AWS, Chef, Java, Play, JRuby, MySQL, Git, Stash, Jenkins, Artifactory, Graphite, Nagios, ELK, Kickstart.
 
-#### Columbia University Libraries _January 2010 to December 2012_</br>
+#### Columbia University Libraries _January 2010 to December 2012_
 *Systems Engineer*
 
 Managed all Apple Macintosh environments through Columbia University Libraries.
@@ -79,7 +79,7 @@ Wrote Perl scripts to generate reports for librarians.</br>
 Maintained JIRA instance used to track help-desk tickets across Columbia University Libraries.</br>
 **Technical Environment:** Ruby, Ruby on Rails, Perl, JIRA, Oracle Database, Bash, OSX, Munki, Deploy Studio.</br>
 
-#### Columbia University Medical Center _June 2007 to December 2009_</br>
+#### Columbia University Medical Center _June 2007 to December 2009_
 *Systems Administrator and Programmer*
 
 Authored various patient file management scripts.</br>
@@ -104,5 +104,5 @@ Wrote programs in VB.Net to automate the process of transitioning from paper rec
 
 ### Education
 
-**Bachelor of Science in Applied Mathematics** _2004 to 2009_ </br>
+#### Bachelor of Science in Applied Mathematics _2004 to 2009_ </br>
   University of Massachusetts at Amherst, Massachusetts
