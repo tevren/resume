@@ -21,9 +21,10 @@
     </script>
   </head>
   <body>
-    <div class="container">
       <div class="resume">
-        <%= resume %>
+        <% resume.each do |k,v| %>
+        <%= v %>
+        <% end %>
   
         <small class="download not-printed">Download as <a href="resume.txt">plain text</a></small></br>
         <small class="download not-printed">Avatar by <a href="https://psfun.tumblr.com">Jamie Lin</a></small>

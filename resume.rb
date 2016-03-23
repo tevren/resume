@@ -21,10 +21,14 @@ get '/index.html' do
   rfile = settings.config['file']
   name  = settings.config['name']
   title = "#{name}'s Resume"
+  resume = {}
+  settings.config['resume_order'].each do |section|
+    resume[section] = build_section(section)
+  end
+  # template = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
 
-  template = Tilt.new(rfile)
-  resume = template.render
-
+  # template = Tilt.new(rfile)
+  # resume = template.render(File.read(rfile))
   erb :index, :locals => {
     :title => title,
     :resume => resume,
@@ -45,3 +49,8 @@ get '/resume.txt' do
   File.read(settings.config['file'])
 end
 
+def build_section(section)
+  template = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
+  resume_directory = settings.config['directory']
+  resume_section = template.render(File.read(File.join(File.dirname(__FILE__),resume_directory,"#{section}.md")))
+end

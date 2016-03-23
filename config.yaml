@@ -9,6 +9,15 @@ user_config:
   # Must be a format supported by github-markup
   file: 'resume.md'
 
+  directory: 'files'
+
+  resume_order:
+    - header
+    - technical
+    - experience
+    - projects
+    - education
+    
   # A picture of you. Should be a complete url
   pic: 'https://lh3.googleusercontent.com/-eANPtaczYO8/Vbun951Fd6I/AAAAAAAABoY/MrxGBWgc0LQ/w280-h280-p/avatar.png'
 
