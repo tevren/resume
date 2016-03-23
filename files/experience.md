@@ -1,25 +1,3 @@
-#Anurag Mohanty
-##Systems Engineer
-
-> [github/tevren](http://github.com/tevren)</br>
-> [anurag@mohanty.io](mailto:anurag@mohanty.io)</br>
-> [(516) 218-1593](tel:+15162181593)</br>
-
------
-### Technical
-
-|||||
-|---|---|---|---|
-| AWS| Ruby | Ruby on Rails | Graphite
-| Chef| Bash|Sinatra | Nagios|
-| Puppet | Perl|Play Framework | New Relic
-| MySQL | Mcollective| Dropwizard | ELK
-| MongoDB | RabbitMQ | Kickstart
-| Jenkins | Squid
-| Artifactory |
-
------
-
 ### Experience
 
 **Amplify Education** _December 2012 to Present_</br>
@@ -89,20 +67,3 @@ Wrote programs in VB.Net to automate the process of transitioning from paper rec
 **Technical Environment:** VBScript, VB.Net, Winbatch, Windows XP.</br>
     
 -----
-
-### Projects
-
-1. **Biffbot**</br>
-  <a href=https://github.com/tevren/biffbot>Biffbot</a>
-  is a ruby libary for the <a href=https://www.diffbot.com >Diffbot</a> API.
-
-2. **RubySpark**</br>
-  <a href=https://github.com/tevren/rubyspark>RubySpark</a>
-  is a ruby port of <a href=http://zachholman.com/spark/>spark</a>.
-
------
-
-### Education
-
-**Bachelor of Science in Applied Mathematics** _2004 to 2009_ </br>
-  University of Massachusetts at Amherst, Massachusetts
