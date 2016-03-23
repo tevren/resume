@@ -16,7 +16,7 @@ Designed the AWS architecture, including VPC/subnet layouts.</br>
 Designed Chef workflow and architecture, for the Access division, and later for the entire company. The workflow is git-based with Jenkins testing and deploying changes to the chef server.
 
 - Implemented role cookbooks to manage dependencies at the cookbook level, resulting dependency resolution and cookbook deployment across a growing organization.
-- Authored Knife plugin to automate node from EC2 and Chef. The plugin schedules downtime in nagios, removes the client from chef, terminates the EC2 instance and cleans up any leftover AWS resources such as Route53 records, EBS volumes AND Elastic IPs.
+- Authored Knife plugin to automate node removal from EC2 and Chef. The plugin schedules downtime in nagios, removes the client from chef, terminates the EC2 instance and cleans up any leftover AWS resources such as Route53 records, EBS volumes AND Elastic IPs.
 - Collaborated with developers to write Chef cookbooks to ensure applications were properly configured.
 - Worked with developers to ensure their applications met production readiness requirements in terms of monitoring and configuration.
 
