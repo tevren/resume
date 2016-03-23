@@ -22,7 +22,7 @@
 
 ### Experience
 
-**Amplify Education** _December 2012 to Present_</br>
+#### Amplify Education _December 2012 to Present_</br>
 *Systems Engineer*
 
 Designed deployment pipeline for java and ruby web-applications.
@@ -37,8 +37,8 @@ Responsibilities include maintaining and monitoring hundreds of servers on AWS t
 Designed the AWS architecture, including VPC/subnet layouts.</br>
 Designed Chef workflow and architecture, for the Access division, and later for the entire company. The workflow is git-based with Jenkins testing and deploying changes to the chef server.
 
-- Solved the problem of dependency resolution and conflicting cookbook versions by implementing role based cookbooks and moving dependencies from environment files to role cookbooks. 
-- Authored Knife plugin to automate node from EC2 and Chef. The plugin schedules downtime in nagios, removes the client from chef, terminates the EC2 instance and cleans up any leftover AWS resources such as Route53 records, EBS volumes AND Elastic IPs.
+- Implemented role cookbooks to manage dependencies at the cookbook level, resulting dependency resolution and cookbook deployment across a growing organization.
+- Authored Knife plugin to automate node removal from EC2 and Chef. The plugin schedules downtime in nagios, removes the client from chef, terminates the EC2 instance and cleans up any leftover AWS resources such as Route53 records, EBS volumes AND Elastic IPs.
 - Collaborated with developers to write Chef cookbooks to ensure applications were properly configured.
 - Worked with developers to ensure their applications met production readiness requirements in terms of monitoring and configuration.
 
@@ -51,7 +51,7 @@ Built and deployed RabbitMQ infrastructure.
 
 Administered ElasticSearch cluster which served as back-end to our logging infrastructure.</br>
 Responsible for in-house appliance from the imaging process at vendor factories to deployment + maintenance at customers' facilities.</br>
-Built HTTP content filtering farm on AWS using Dansguardian and squid.</br>
+Built HTTP content filtering farm on AWS using dansguardian and squid.</br>
 Member of daily on-call rotation that is responsible for resolving outages reported by customers to Tier 3 and of a weekly on-call rotation that is responsible for uptime of critical services.
 
 Migrated Access division from News Corp Exchange to Google Apps
@@ -61,7 +61,7 @@ Migrated Access division from News Corp Exchange to Google Apps
 
 **Technical Environment:** AWS, Chef, Java, Play, JRuby, MySQL, Git, Stash, Jenkins, Artifactory, Graphite, Nagios, ELK, Kickstart.
 
-**Columbia University Libraries** _January 2010 to December 2012_</br>
+#### Columbia University Libraries _January 2010 to December 2012_</br>
 *Systems Engineer*
 
 Managed all Apple Macintosh environments through Columbia University Libraries.
@@ -71,15 +71,15 @@ Managed all Apple Macintosh environments through Columbia University Libraries.
 
 Wrote Ruby on Rails applications as front-ends to various back-end systems.
 
-- Created a frontend for Munki so that support engineers can manage software through a web portal.
-- Developed an Ruby on Rails application to create helpdesk tickets. 
+- Created a front-end for Munki so that support engineers can manage software through a web portal.
+- Developed an Ruby on Rails application to create help desk tickets. 
 
 Documented procedures and best practices for various technical tasks performed by the technology team.</br>
 Wrote Perl scripts to generate reports for librarians.</br>
 Maintained JIRA instance used to track help-desk tickets across Columbia University Libraries.</br>
 **Technical Environment:** Ruby, Ruby on Rails, Perl, JIRA, Oracle Database, Bash, OSX, Munki, Deploy Studio.</br>
 
-**Columbia University Medical Center** _June 2007 to December 2009_</br>
+#### Columbia University Medical Center _June 2007 to December 2009_</br>
 *Systems Administrator and Programmer*
 
 Authored various patient file management scripts.</br>
@@ -87,7 +87,7 @@ Automated file server backups and data archival. </br>
 Developed VB.NET programs to interface with scanner.</br>
 Wrote programs in VB.Net to automate the process of transitioning from paper records to digital records.</br>
 **Technical Environment:** VBScript, VB.Net, Winbatch, Windows XP.</br>
-    
+
 -----
 
 ### Projects
