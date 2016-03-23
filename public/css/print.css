@@ -6,11 +6,11 @@
 
 body { font-family: Open Sans, Myriad Pro, Myriad, sans-serif; color: #1d1313; font-weight: 300; margin: 0; }
 
-h1 { font-family: Old Standard TT, serif; margin: 0; text-align: left; position: relative; display: block; padding: 0; font-weight: normal; font-size: 44px; text-transform: uppercase; letter-spacing: 3px; font-weight: normal; }
+h1 { font-family: Old Standard TT, serif; margin: 0; text-align: left; position: relative; display: block; padding: 0; font-weight: normal; font-size: 36px; text-transform: uppercase; letter-spacing: 3px; font-weight: normal; }
 
-h2 { font-family: Old Standard TT, serif; margin: 0; text-align: left; position: relative; display: block; font-size: 18px; font-style: italic; letter-spacing: -1px; font-weight: normal; }
+h2 { font-family: Old Standard TT, serif; margin: 0; text-align: left; position: relative; display: block; font-size: 16px; font-style: italic; letter-spacing: -1px; font-weight: normal; }
 
-h3 { font-family: Old Standard TT, serif; margin: 0; padding: 0 0 .5em; font-size: 150%; font-style: italic; font-weight: normal; }
+h3 { font-family: Old Standard TT, serif; margin: 0; padding: 0 0 .5em; font-size: 120%; font-style: italic; font-weight: normal; }
 
 h4 { font-family: Old Standard TT, serif; }
 
@@ -44,13 +44,13 @@ a { color: #BAD7D9; }
 .resume hr { display: block; position: relative; padding: 0; margin: 18px auto; width: 100%; clear: both; border: none; border-top: 1px solid #ccc; font-size: 1px; line-height: 0; overflow: visible; page-break-after: avoid; }
 .resume hr:nth-of-type(1) { margin-top: 32px; }
 
-p { margin: .6em 0 16px; padding: 0; display: block; font-size: 100%; line-height: 24px; }
+p { margin: .6em 0 16px; padding: 0; display: block; font-size: 80%; line-height: 24px; }
 
 ol { margin: 0; padding: 0 0 .75em; width: 84%; display: inline-block; }
-ol li { margin: 0 0 0 1em; padding: 0; width: 30%; float: left; list-style: none; line-height: 24px; }
+ol li { margin: 0 0 0 1em; padding: 0; width: 30%; float: left; list-style: none; font-size: 80%; line-height: 24px; }
 
 ul { margin: 0; padding: 0; list-style: circle; width: 80%; float: right; margin-bottom: 0.15em; }
-ul li { width: 100%; float: left; margin-bottom: 0.15em; margin: 0; padding: 0s; }
+ul li { width: 100%; float: left; margin-bottom: 0.15em; font-size: 80%; margin: 0; padding: 0s; }
 ul li p { margin: 1em 0.5em; line-height: 1.5em; }
 ul dl dt { font-size: 122%; font-weight: normal; margin-bottom: 0.75em; }
 ul dl dd { padding: 0 4em 0 0; }
