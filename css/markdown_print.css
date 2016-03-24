@@ -1,10 +1,14 @@
 body{
-  margin: 0 3em 0 3em;
+  margin: 0 2em 0 2em;
 }
 body, p, li, div, h1, h2, h3, h4, h5, h6, td {
   color: #000000;
   font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
 }
+h1, h2, h3, h4, h5, h6{
+  line-height:.5em;
+}
+em { float:right;}
 code {
   font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
   font-weight: bold;
