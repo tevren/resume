@@ -35,7 +35,7 @@ Built deployment pipeline for Java and JRuby web-applications.
 
 Responsibilities include maintaining and monitoring hundreds of servers on AWS that communicated with 20,000 tablets.</br>
 Designed the AWS architecture, including VPC/subnet layouts.</br>
-Designed Chef work-flow and architecture, for the Access division, and later for the entire company. The work-flow is git-based with Jenkins testing and deploying changes to the chef server.
+Designed git-based Chef workflow/architecture orchestrated by Jenkins.
 
 - Implemented role cookbooks to improve cookbook versioning and dependency management across a growing organization.
 - Authored Knife plug-in to automate node removal from EC2 and Chef. The plug in schedules downtime in Nagios, removes the client from chef, terminates the EC2 instance and cleans up any leftover AWS resources such as Route53 records, EBS volumes AND Elastic IPs.
