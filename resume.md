@@ -31,7 +31,7 @@ Built deployment pipeline for Java and JRuby web-applications.
 - Designed criteria for build-manifests, which describe set of applications have been tested together and can be released through the deployment pipeline together. 
 - Extended Mcollective as a deployment mechanism by using RabbitMQ, resulting in dependable and scalable push button deployments.
 - Maintained Jenkins server and agents.
-- Built Artifactory architecture which included S3 back-end for storage, and MySQL on Amazon RDS as a database, and cross-region Artifactory replication for disaster recovery.
+- Built Artifactory architecture which included S3 storage back-end, and MySQL on Amazon RDS, and cross-region Artifactory replication for disaster recovery.
 
 Responsibilities include maintaining and monitoring hundreds of servers on AWS that communicated with 20,000 tablets.</br>
 Designed the AWS architecture, including VPC/subnet layouts.</br>
