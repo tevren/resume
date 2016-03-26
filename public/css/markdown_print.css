@@ -1,5 +1,7 @@
+* { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; }
 body{
   margin: 0 1.5em 0 1.5em;
+  font-size:12pt; max-width:100%;
 }
 body, p, li, div, h1, h2, h3, h4, h5, h6, td {
   color: #000000;
@@ -8,78 +10,37 @@ body, p, li, div, h1, h2, h3, h4, h5, h6, td {
 h1, h2, h3, h4, h5, h6{
   line-height:.5em;
 }
+h4,h5,h6{ font-weight: bold; margin: 1em 0;}
 em { float:right;}
-code {
-  font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
-  font-weight: bold;
+.resume{
+  position: relative;
 }
-pre {
-  background: #FFFFFF;
-  border: 1px solid #B8C0C4;
-  padding: 4px 8px 4px 8px;
-  margin: 0px 1em;
-  max-width: 56em;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
-  font-weight: normal;
-  color: #474747;
-}
-pre code {
-  font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
-  font-weight: normal;
-  color: #474747;
-}
-dd {
-  margin-bottom: 1em;
-}
-dd p {
-  margin-top: 0px;
-}
-dd pre {
-  margin: 1em 0px;
-}
-blockquote {
-  border-left: 3px solid #B6B6B6;
-  margin: 1em;
-  padding-left: 1em;
+blockquote{
+color:#666666;
+margin:0;
+margin-top:-1.5em;
+margin-bottom: -1em;
+float:right;
+display:inline;
+top: 0px;
+right: 0px;
+position: absolute;
+text-align: right;
 }
 a {
   text-decoration: none;
   color: #0645ad;
 }
-a:after {
-   content: " (" attr(href) ") ";
-   font-size: 90%;
-}
-/* fix for space in list items containing <pre> */
+hr { height: 1px; border:0; border-bottom:1px solid black; }
+tr, img { page-break-inside: avoid; }
+img { max-width: 100% !important; }
+
 li p {
   margin-top: 0px;
 }
-li pre {
-  margin-bottom: 1em;
-}
+li p:last-child { margin:0 }
 td, th {
   padding: 0.1em 1em;
-}
-/* Metadata Table */
-table#metadata {
-  margin: 1em 0em 1em 1em;
-  border-collapse: collapse;
-  border-top: 1px solid #EDEDED;
-  float: right;
-}
-.mda {
-  /* metadata attribute */
-  border-left: 1px solid #EDEDED;
-  border-bottom: 1px solid #EDEDED;
-  font-weight: bold;
-  vertical-align: top;
-}
-.mdv {
-  /* metadata value */
-  border-right: 1px solid #EDEDED;
-  border-bottom: 1px solid #EDEDED;
 }
 /* Don't print these things */
 .controls {
@@ -100,4 +61,6 @@ table#metadata {
 .permalink {
   display: none;
 }
-@media print {.not-printed { display: none; }}
+.not-printed {
+  display: none;
+}
