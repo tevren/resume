@@ -37,3 +37,8 @@ get '/resume.txt' do
   content_type 'text/plain', :charset => 'utf-8'
   File.read(settings.config['file'])
 end
+
+get '/resume.pdf' do
+  content_type 'application/pdf'
+  File.read(settings.config['pdf'])
+end
