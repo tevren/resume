@@ -8,6 +8,7 @@ line-height:1.5em;
 padding:1em;
 margin:auto;
 max-width:1000px;
+border-top: .5em #cae9e8 solid;
 background:#fefefe; 
 background-image: url("https://lh3.googleusercontent.com/-eANPtaczYO8/Vbun951Fd6I/AAAAAAAABoY/MrxGBWgc0LQ/w280-h280-p/avatar.png"); 
 background-attachment: fixed; 
@@ -16,7 +17,6 @@ background-repeat: no-repeat;
 }
 .resume{
   background: #fff;
-  border: 0.1em #EEE solid;
   padding: 1.5em;
   position: relative;
 }
