@@ -26,23 +26,23 @@
 ##### Systems Engineer
 - Built deployment pipeline for Java and JRuby web-applications.
   - Wrote guidelines and documentation on application configuration and monitoring.
-  - Designed criteria for build-manifests, which describe set of applications have been tested together and can be released through the deployment pipeline together. 
+  - Designed criteria for build-manifests, which describe sets of applications that have been tested together and can be released through the deployment pipeline together. 
   - Extended Mcollective as a deployment mechanism by using RabbitMQ, resulting in dependable and scalable push button deployments.
   - Maintained Jenkins server and agents.
-  - Built Artifactory architecture which included S3 storage back-end, and MySQL on Amazon RDS, and cross-region Artifactory replication for disaster recovery.
+  - Built Artifactory architecture which included S3 storage back-end, MySQL on Amazon RDS, and cross-region Artifactory replication for disaster recovery.
 - Responsibilities include maintaining and monitoring hundreds of servers on AWS that communicated with 20,000 tablets.
 - Designed the AWS architecture, including VPC/subnet layouts.
 - Designed git-based Chef workflow/architecture orchestrated by Jenkins.
   - Implemented role cookbooks to improve cookbook versioning and dependency management across a growing organization.
-  - Authored Knife plug-in to automate node removal from EC2 and Chef. The plug in schedules downtime in Nagios, removes the client from chef, terminates the EC2 instance and cleans up any leftover AWS resources such as Route53 records, EBS volumes AND Elastic IPs.
+  - Authored Knife plug-in to automate host termination including cleanup of Chef, Nagios, EC2 instances, Route 53 records, EBS volumes, and Elastic IPs. 
   - Collaborated with developers to write Chef cookbooks to ensure applications were properly configured.
-  - Worked with developers to ensure their applications met production readiness requirements in terms of monitoring and configuration.
+- Held production readiness reviews with developers to ensure applications met monitoring and configuration requirements.
 - Administered Nagios and wrote Nagios checks as part of application on-boarding and on-going application monitoring.
 - Built and deployed RabbitMQ infrastructure.
   - Wrote ruby scripts that test end to end availability of RabbitMQ cluster and sent usage data to Graphite.
   - Provided support and expertise to development team in dealing with RabbitMQ.
 - Administered ElasticSearch cluster which served as back-end to our logging infrastructure.
-- Responsible for in-house appliance from the imaging process at vendor factories to deployment + maintenance at customers' facilities.
+- Developed imaging workflow for customer hosted appliance for unattended provisioning at vendor's factories. 
 - Built HTTP content filtering farm on AWS using Dansguardian and Squid.
 - Member of daily on-call rotation that is responsible for resolving outages reported by customers to Tier 3 and of a weekly on-call rotation that is responsible for uptime of critical services.
 - Automated migration from Exchange to Google Apps using a combination of GAM and custom scripting.
@@ -65,9 +65,9 @@
 
 #### Columbia University Medical Center _June 2007 to December 2009_
 ##### Systems Administrator and Programmer
-- Authored various patient file management scripts.</br>
-- Automated file server backups and data archival. </br>
-- Developed VB.NET programs to interface with scanner.</br>
+- Authored various patient file management scripts.
+- Automated file server backups and data archival.
+- Developed VB.NET programs to interface with scanner.
 - Wrote programs in VB.Net to automate the process of transitioning from paper records to digital records.
 
 **Technical Environment:** VBScript, VB.Net, Winbatch.</br>
@@ -82,7 +82,7 @@
 
 2. **RubySpark**</br>
   [RubySpark](https://github.com/tevren/rubyspark)
-  is a ruby port of <a href=http://zachholman.com/spark/>spark</a>.
+  is a ruby port of [spark](http://zachholman.com/spark/).
 
 -----
 
