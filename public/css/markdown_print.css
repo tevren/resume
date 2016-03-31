@@ -1,6 +1,7 @@
 * { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; }
 body{
   margin: 0 1.5em 0 1.5em;
+  border: none;
   font-size:10pt; max-width:100%;
   font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
 }
