@@ -10,7 +10,7 @@
 
 ||||||
 |---|---|---|---|---|
-| AWS | Ruby | Ruby on Rails | Graphite | Squid
+| AWS | Ruby | Ruby on Rails | Graphite | Jenkins
 | Chef | Bash | Sinatra | Nagios | Artifactory
 | Puppet | Perl | Play Framework | New Relic | Mcollective
 | MySQL || Dropwizard | ELK | Squid
