@@ -5374,17 +5374,17 @@
          
          <tr>
            <td>rack.errors</td>
-           <td class="code"><div>#&lt;Object:0x007fd2031baf58&gt;</div></td>
+           <td class="code"><div>#&lt;Object:0x007f960c2c6bf0&gt;</div></td>
          </tr>
          
          <tr>
            <td>rack.input</td>
-           <td class="code"><div>#&lt;StringIO:0x007fd203140460&gt;</div></td>
+           <td class="code"><div>#&lt;StringIO:0x007f960d8f81f8&gt;</div></td>
          </tr>
          
          <tr>
            <td>rack.logger</td>
-           <td class="code"><div>#&lt;Logger:0x007fd20313bf78 @progname=nil, @level=1, @default_formatter=#&lt;Logger::Formatter:0x007fd20313bf28 @datetime_format=nil&gt;, @formatter=nil, @logdev=#&lt;Logger::LogDevice:0x007fd20313bcf8 @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#&lt;StringIO:0x007fd203140550&gt;, @mutex=#&lt;Logger::LogDevice::LogDeviceMutex:0x007fd20313bcd0 @mon_owner=nil, @mon_count=0, @mon_mutex=#&lt;Mutex:0x007fd20313bbe0&gt;&gt;&gt;&gt;</div></td>
+           <td class="code"><div>#&lt;Logger:0x007f960d8f3a90 @progname=nil, @level=1, @default_formatter=#&lt;Logger::Formatter:0x007f960d8f3a40 @datetime_format=nil&gt;, @formatter=nil, @logdev=#&lt;Logger::LogDevice:0x007f960d8f39c8 @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#&lt;StringIO:0x007f960d8f82c0&gt;, @mutex=#&lt;Logger::LogDevice::LogDeviceMutex:0x007f960d8f3978 @mon_owner=nil, @mon_count=0, @mon_mutex=#&lt;Mutex:0x007f960d8f3928&gt;&gt;&gt;&gt;</div></td>
          </tr>
          
          <tr>
@@ -5439,7 +5439,7 @@
          
          <tr>
            <td>sinatra.accept</td>
-           <td class="code"><div>[#&lt;Sinatra::Request::AcceptEntry:0x007fd203138468 @entry=&quot;*&#x2F;*&quot;, @type=&quot;*&#x2F;*&quot;, @params={}, @q=1.0&gt;]</div></td>
+           <td class="code"><div>[#&lt;Sinatra::Request::AcceptEntry:0x007f960d8f01b0 @entry=&quot;*&#x2F;*&quot;, @type=&quot;*&#x2F;*&quot;, @params={}, @q=1.0&gt;]</div></td>
          </tr>
          
          <tr>

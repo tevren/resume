@@ -1,7 +1,7 @@
 * { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; }
 body{
   margin: 0 1.5em 0 1.5em;
-  font-size:12pt; max-width:100%;
+  font-size:10pt; max-width:100%;
   font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
 }
 body, p, li, div, h1, h2, h3, h4, h5, h6, td {
