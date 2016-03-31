@@ -8,15 +8,13 @@
 -----
 ### Technical
 
-|||||
-|---|---|---|---|
-| AWS| Ruby | Ruby on Rails | Graphite
-| Chef| Bash|Sinatra | Nagios|
-| Puppet | Perl|Play Framework | New Relic
-| MySQL | Mcollective| Dropwizard | ELK
-| MongoDB | RabbitMQ | Kickstart
-| Jenkins | Squid
-| Artifactory |
+||||||
+|---|---|---|---|---|
+| AWS | Ruby | Ruby on Rails | Graphite | Squid
+| Chef | Bash | Sinatra | Nagios | Artifactory
+| Puppet | Perl | Play Framework | New Relic | Mcollective
+| MySQL || Dropwizard | ELK | Squid
+| MongoDB ||||Kickstart
 
 -----
 
