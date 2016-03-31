@@ -13,7 +13,6 @@ GEM
       rack (>= 1.0)
     rake (10.4.2)
     redcarpet (3.2.3)
-    sass (3.4.13)
     shotgun (0.9.1)
       rack (>= 1.0)
     sinatra (1.4.6)
@@ -25,6 +24,7 @@ GEM
       eventmachine (~> 1.0)
       rack (~> 1.0)
     tilt (2.0.1)
+    wkhtmltopdf-binary-edge (0.12.3.0)
 
 PLATFORMS
   ruby
@@ -36,10 +36,10 @@ DEPENDENCIES
   rack-test
   rake
   redcarpet
-  sass
   shotgun
   sinatra
   thin
+  wkhtmltopdf-binary-edge
 
 BUNDLED WITH
    1.11.2
