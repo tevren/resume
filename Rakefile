@@ -32,7 +32,7 @@ task :github do
   p files
 
   root = "/tmp/checkout-#{Time.now.to_i}"
-  g = Git.clone(remote, root, :log => Logger.new(STDOUT))
+  g = Git.clone(remote.insert(8,"#{ENV['GH_TOKEN']}@"), root, :log => Logger.new(STDOUT))
   g.config('user.name', 'Anurag Mohanty')
   g.config('user.email', 'anurag@mohanty.io')
   # Make sure this actually switches branches.
@@ -66,9 +66,8 @@ task :pdf do
   root_dir = File.dirname(__FILE__)
   kit = PDFKit.new(html_file, :page_size => 'Letter')
   kit.stylesheets << "#{root_dir}/public/css/markdown.css"
-  # kit.stylesheets << "#{root_dir}/public/css/markdown_print.css"
-
   kit.to_file("#{root_dir}/resume.pdf")
+  puts '--> Successfully generated PDF.'
 end
 
 task :github => :pdf
