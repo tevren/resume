@@ -21,4 +21,4 @@ user_config:
 # For github pages to work, this needs to be the GitHub repository this file is
 # stored in.
 github:
-  remote: 'git@github.com:tevren/resume.git'
+  remote: "https://<%= ENV['GH_TOKEN'] %>@github.com/tevren/resume.git"
