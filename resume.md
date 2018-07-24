@@ -11,20 +11,43 @@
 ||||||
 |---|---|---|---|---|
 | AWS | Ruby | Ruby on Rails | Graphite | Jenkins
-| Chef | Bash | Sinatra | Nagios | Artifactory
-| Puppet | Perl | Play Framework | New Relic | Mcollective
-| MySQL || Dropwizard | ELK | Squid
-| MongoDB ||||Kickstart
-
+| Google Cloud| Python| Sinatra | Nagios | Artifactory
+| Chef | Bash | Play Framework | New Relic | Mcollective
+| Puppet | Golang | Dropwizard | ELK | Squid
+| Terraform  | Perl |Docker| Datadog |Kickstart
+| MySQL ||Kubernetes|||
+| Zookeeper |||||
 -----
 
 ### Experience
 
-#### Amplify Education _December 2012 to Present_
+#### FuboTV _August 2017 to Present_
+##### Senior Site Reliability Engineer
+- Wrote deployment orchestration tool in python that creates and manages Kubernetes deployments.
+- Designed and built a service, in golang, to cut down on writes to storage backend, saving the company $12,000 a month.
+- Scaled Redis to support 200,000 users.
+- Added monitoring and alerting to key services.
+- Terraformed fastly infrastructure provisioning.
+
+**Technical Environment:** Google Cloud, Kubernetes, Python 2.7/3, Golang, CircleCI, Redis, Postgres.
+
+#### Spotify  _June 2016 to July 2017_
+##### Senior Site Reliability Engineer
+- Worked on internal application that provided a uniform experience between GCP compute provisioning and on premise hardware provisioning.
+  - Wrote python app that consumes pubsub messages and restarts machines.
+  - Improved provisioning for physical machines by adding automated testing.
+  - Migrated python web application stack to Docker for ease of local development.
+- Drafted design documentation for large infrastructure changes, including reducing deltas in deployments to speed up DNS deployments.
+- Member of weekly on-call rotation that is responsible for uptime of critical services developed by the team,
+including DNS and Google Cloud infrastructure.
+
+**Technical Environment:** Google Cloud, Python 2.7/3, Puppet, Jenkins, Redis, Zookeeper, Helios.
+
+#### Amplify Education _December 2012 to June 2016_
 ##### Systems Engineer
 - Built deployment pipeline for Java and JRuby web-applications.
   - Wrote guidelines and documentation on application configuration and monitoring.
-  - Designed criteria for build-manifests, which describe sets of applications that have been tested together and can be released through the deployment pipeline together. 
+  - Designed criteria for build-manifests, which describe sets of applications that have been tested together and can be released through the deployment pipeline together.
   - Extended Mcollective as a deployment mechanism by using RabbitMQ, resulting in dependable and scalable push button deployments.
   - Maintained Jenkins server and agents.
   - Built Artifactory architecture which included S3 storage back-end, MySQL on Amazon RDS, and cross-region Artifactory replication for disaster recovery.
@@ -32,7 +55,7 @@
 - Designed the AWS architecture, including VPC/subnet layouts.
 - Designed git-based Chef workflow/architecture orchestrated by Jenkins.
   - Implemented role cookbooks to improve cookbook versioning and dependency management across a growing organization.
-  - Authored Knife plug-in to automate host termination including cleanup of Chef, Nagios, EC2 instances, Route 53 records, EBS volumes, and Elastic IPs. 
+  - Authored Knife plug-in to automate host termination including cleanup of Chef, Nagios, EC2 instances, Route 53 records, EBS volumes, and Elastic IPs.
   - Collaborated with developers to write Chef cookbooks to ensure applications were properly configured.
 - Held production readiness reviews with developers to ensure applications met monitoring and configuration requirements.
 - Administered Nagios and wrote Nagios checks as part of application on-boarding and on-going application monitoring.
@@ -40,7 +63,7 @@
   - Wrote ruby scripts that test end to end availability of RabbitMQ cluster and sent usage data to Graphite.
   - Provided support and expertise to development team in dealing with RabbitMQ.
 - Administered ElasticSearch cluster which served as back-end to our logging infrastructure.
-- Developed imaging workflow for customer hosted appliance for unattended provisioning at vendor's factories. 
+- Developed imaging workflow for customer hosted appliance for unattended provisioning at vendor's factories.
 - Built HTTP content filtering farm on AWS using Dansguardian and Squid.
 - Member of daily on-call rotation that is responsible for resolving outages reported by customers to Tier 3 and of a weekly on-call rotation that is responsible for uptime of critical services.
 - Automated migration from Exchange to Google Apps using a combination of GAM and custom scripting.
@@ -54,7 +77,7 @@
   - Tested and deployed Munki as a solution to manage and update software across environments.
 - Wrote Ruby on Rails applications as front-ends to various back-end systems.
   - Created a front-end for Munki so that support engineers can manage software through a web portal.
-  - Developed an Ruby on Rails application to create help desk tickets. 
+  - Developed an Ruby on Rails application to create help desk tickets.
 - Documented procedures and best practices for various technical tasks performed by the technology team.
 - Wrote Perl scripts to generate reports for librarians.
 - Maintained JIRA instance used to track help-desk tickets across Columbia University Libraries.
