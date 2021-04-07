@@ -13,7 +13,7 @@ user_config:
 
     
   # A picture of you. Should be a complete url
-  pic: 'https://lh3.googleusercontent.com/-eANPtaczYO8/Vbun951Fd6I/AAAAAAAABoY/MrxGBWgc0LQ/w280-h280-p/avatar.png'
+  pic: 'http://resume.anuragmohanty.com/avatar.png'
 
   # The google analytics key you wish to use.
   gkey: 'UA-66028832-1'
