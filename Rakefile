@@ -35,7 +35,7 @@ task :github do
   root = "/tmp/checkout-#{Time.now.to_i}"
   g = Git.clone(remote.insert(8,"#{ENV['GH_TOKEN']}@"), root, :log => Logger.new(STDOUT))
   g.config('user.name', 'Anurag Mohanty')
-  g.config('user.email', 'anurag@mohanty.io')
+  g.config('user.email', '805123+tevren@users.noreply.github.com')
   # Make sure this actually switches branches.
   g.checkout(g.branch('gh-pages'))
 

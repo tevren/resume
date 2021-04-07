@@ -2,8 +2,7 @@ language: ruby
 rvm:
  - 2.5.1
 before_install:
-  - yes | gem update --system --force
-  - gem install bundler
+  - bundle update --bundler
 script: bundle exec rake github
 env:
   - secure: "AHvBP7KBW1YHwTUcwchZ9+pido8zHIU+KGc53xIkn74jHhb9dyWiaJ4aw3dYxAmoIgR8OvsXNcthU6+oOTaD0ReTUTTrFJfBAzimtbb+AaHzR4sqQzfmaDJkQmoNnjtELprGG1enx4vPVvQ/Vk4SeU9u20fESsC7jJLwm9eYb5YJmmUKm3sdZNO9RMg0FAfbYsd8aqeNVDWRUPSMNgg4ic4w3LbgxhGbgjNEoVUsz2Akw/ZuMr7J9Sin4uQWYTC/Mwc8OmEL0pdDLSA6c9NLW8ub8TporMg/mkoeZnJISwkuLWe8XN1oJAVp72mVOuNLDmA88660gjpDgyVGmbxMgBlrDkc0Gc9QQ+6MI8XEq8NVyW67JuB/wNhA1OzPOyEYPB8PbfaR9JXYZ+wcTCGthoMU7cIcH05RDHJ9tuIQ4rbWnM9v63BVjkI7Pyt2G7fFYBd3w8EBxs1MIfjVNLxsD1t+pad60vMRoiykSVOQzE5f9Ncoi/P7W3gOqfAnjGLEJWjxo93FK+SD2QV4D1w3F2iWsjpR7ZvJshTdjwijaauLURbKxVG5kzylLUXghMNzJrkzr5NSDclJ/bHjvC3HSBotKAHKPJBLvTeopYALmCug4Yd2KudHpi0wr86urwYR/R0pDohQvZNrmZlT02WuvQbHg78P4jatb5I1nrPvV7w="
