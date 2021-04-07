@@ -1,45 +1,54 @@
-#Anurag Mohanty
-##Site Reliability Engineer
+# Anurag Mohanty
+
+## Site Reliability Engineer
 
 > [github/tevren](http://github.com/tevren)</br>
 > [anurag@mohanty.io](mailto:anurag@mohanty.io)</br>
 > [(516) 218-1593](tel:+15162181593)</br>
 
 -----
-### Technical
-
+### Technical Skills
 ||||||
 |---|---|---|---|---|
-| AWS | Ruby | Ruby on Rails | Graphite | Jenkins
-| Google Cloud| Python| Sinatra | Nagios | Artifactory
-| Chef | Bash | Play Framework | New Relic | Mcollective
-| Puppet | Golang | Dropwizard | ELK | Squid
-| Terraform  | Perl |Docker| Datadog |Kickstart
-| MySQL ||Kubernetes|||
-| Zookeeper |||||
+| GCP| Python| Docker | Terraform | Datadog
+| AWS | Golang | Kubernetes | Pulumi | NewRelic
+| Azure | Ruby | Helm | Chef | CircleCI
+| Digital Ocean  | Shell | Mesos/Marathon | Ansible |Jenkins
+
 -----
 
 ### Experience
 
 #### FuboTV _August 2017 to Present_
-##### Senior Site Reliability Engineer
-- Wrote deployment orchestration tool in python that creates and manages Kubernetes deployments.
-- Designed and built a service, in golang, to cut down on writes to storage backend, saving the company $12,000 a month.
-- Scaled Redis to support 200,000 users.
-- Added monitoring and alerting to key services.
-- Terraformed fastly infrastructure provisioning.
+##### Staff Site Reliability Engineer _August 2019 to Present_
+- Migrated applications from in house python deployment tool to Helm.
+- Took initiative to discover root cause of an ever-growing Datadog bill, and worked with engineering teams to implement a solution saving the company $97,000 annually.
+- Designed and implemented HA Apache Kafka + Zookeeper infrastructure.
+- Developed disaster recovery in the video playout stack that allows for the loss of an entire GCP region. This architecture is extendable across cloud providers. 
+- Ensured the video engineering team's data handling met GDPR requirements.
+- Authored golang application that manages video metadata. It served as a guideline on how services are written on the video engineering team.
+- Authored libraries used in the video ingest and playout stack to interface with in-house application fronting Apache Kafka.
+- Wrote golang service that aggregates data from BigQuery and sends resultant data to Datadog. This service filled a gap in our monitoring by providing latency metrics that were otherwise unavailable.
+- Identified and fixed concurrency bugs in multiple critical systems. These range from improving write performance in the metadata library by tracing slow database queries and implementing concurrency to solving race conditions with multiple locks. 
 
-**Technical Environment:** Google Cloud, Kubernetes, Python 2.7/3, Golang, CircleCI, Redis, Postgres.
+##### Senior Site Reliability Engineer _August 2017 to August 2019_
+- Original author and primary maintainer of a Python-based deployment orchestration that creates and manages Kubernetes deployments across multiple environments and clusters.
+- Designed and wrote a Golang service that reduces writes to Google Cloud Storage, which resulted in the company saving $40,000 a month.
+- Helped scale a Redis-backed service that supports over 200,000 concurrent users, a tenfold increase over the previous year.
+- Added monitoring and alerting to key services.
+- Developed a zero user impact rollout and update strategy for storage backends (redis, kafka).
+- Relied upon by leadership and multiple teams for SRE expertise.
+
+**Technical Environment:** Google Cloud, Kubernetes, Golang, Python 2.7/3, CircleCI, Redis, Postgres, Kafka, Datadog, CircleCI
 
 #### Spotify  _June 2016 to July 2017_
 ##### Senior Site Reliability Engineer
 - Worked on internal application that provided a uniform experience between GCP compute provisioning and on premise hardware provisioning.
-  - Wrote python app that consumes pubsub messages and restarts machines.
+  - Wrote Python app that consumes pubsub messages and restarts machines.
   - Improved provisioning for physical machines by adding automated testing.
-  - Migrated python web application stack to Docker for ease of local development.
+  - Migrated Python web application stack to Docker for ease of local development.
 - Drafted design documentation for large infrastructure changes, including reducing deltas in deployments to speed up DNS deployments.
-- Member of weekly on-call rotation that is responsible for uptime of critical services developed by the team,
-including DNS and Google Cloud infrastructure.
+- Member of weekly on-call rotation that is responsible for uptime of critical services developed by the team, including DNS and Google Cloud infrastructure.
 
 **Technical Environment:** Google Cloud, Python 2.7/3, Puppet, Jenkins, Redis, Zookeeper, Helios.
 
