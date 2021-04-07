@@ -65,7 +65,7 @@ task :pdf do
   browser = Rack::Test::Session.new(Rack::MockSession.new(Sinatra::Application))
   html_file = browser.get('/index.html').body
   root_dir = File.dirname(__FILE__)
-  kit = PDFKit.new(html_file, :page_size => 'Letter')
+  kit = PDFKit.new(html_file, :page_size => 'Letter', :enable_local_file_access => true)
   kit.stylesheets << "#{root_dir}/public/css/markdown.css"
   kit.to_file("#{root_dir}/resume.pdf")
   puts '--> Successfully generated PDF.'
