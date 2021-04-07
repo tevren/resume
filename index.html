@@ -23,7 +23,7 @@
       <div class="resume">
         <h1>Anurag Mohanty</h1>
 
-<h2>Systems Engineer</h2>
+<h2>Site Reliability Engineer</h2>
 
 <blockquote>
 <p><a href="http://github.com/tevren">github/tevren</a></br>
@@ -33,7 +33,7 @@
 
 <hr>
 
-<h3>Technical</h3>
+<h3>Technical Skills</h3>
 
 <table><thead>
 <tr>
@@ -45,39 +45,32 @@
 </tr>
 </thead><tbody>
 <tr>
+<td>GCP</td>
+<td>Python</td>
+<td>Docker</td>
+<td>Terraform</td>
+<td>Datadog</td>
+</tr>
+<tr>
 <td>AWS</td>
+<td>Golang</td>
+<td>Kubernetes</td>
+<td>Pulumi</td>
+<td>NewRelic</td>
+</tr>
+<tr>
+<td>Azure</td>
 <td>Ruby</td>
-<td>Ruby on Rails</td>
-<td>Graphite</td>
-<td>Jenkins</td>
-</tr>
-<tr>
+<td>Helm</td>
 <td>Chef</td>
-<td>Bash</td>
-<td>Sinatra</td>
-<td>Nagios</td>
-<td>Artifactory</td>
+<td>CircleCI</td>
 </tr>
 <tr>
-<td>Puppet</td>
-<td>Perl</td>
-<td>Play Framework</td>
-<td>New Relic</td>
-<td>Mcollective</td>
-</tr>
-<tr>
-<td>MySQL</td>
-<td></td>
-<td>Dropwizard</td>
-<td>ELK</td>
-<td>Squid</td>
-</tr>
-<tr>
-<td>MongoDB</td>
-<td></td>
-<td></td>
-<td></td>
-<td>Kickstart</td>
+<td>Digital Ocean</td>
+<td>Shell</td>
+<td>Mesos/Marathon</td>
+<td>Ansible</td>
+<td>Jenkins</td>
 </tr>
 </tbody></table>
 
@@ -85,7 +78,54 @@
 
 <h3>Experience</h3>
 
-<h4>Amplify Education <em>December 2012 to Present</em></h4>
+<h4>FuboTV <em>August 2017 to Present</em></h4>
+
+<h5>Staff Site Reliability Engineer <em>August 2019 to Present</em></h5>
+
+<ul>
+<li>Migrated applications from in house python deployment tool to Helm.</li>
+<li>Took initiative to discover root cause of an ever-growing Datadog bill, and worked with engineering teams to implement a solution saving the company $97,000 annually.</li>
+<li>Designed and implemented HA Apache Kafka + Zookeeper infrastructure.</li>
+<li>Developed disaster recovery in the video playout stack that allows for the loss of an entire GCP region. This architecture is extendable across cloud providers. </li>
+<li>Ensured the video engineering team&#39;s data handling met GDPR requirements.</li>
+<li>Authored golang application that manages video metadata. It served as a guideline on how services are written on the video engineering team.</li>
+<li>Authored libraries used in the video ingest and playout stack to interface with in-house application fronting Apache Kafka.</li>
+<li>Wrote golang service that aggregates data from BigQuery and sends resultant data to Datadog. This service filled a gap in our monitoring by providing latency metrics that were otherwise unavailable.</li>
+<li>Identified and fixed concurrency bugs in multiple critical systems. These range from improving write performance in the metadata library by tracing slow database queries and implementing concurrency to solving race conditions with multiple locks. </li>
+</ul>
+
+<h5>Senior Site Reliability Engineer <em>August 2017 to August 2019</em></h5>
+
+<ul>
+<li>Original author and primary maintainer of a Python-based deployment orchestration that creates and manages Kubernetes deployments across multiple environments and clusters.</li>
+<li>Designed and wrote a Golang service that reduces writes to Google Cloud Storage, which resulted in the company saving $40,000 a month.</li>
+<li>Helped scale a Redis-backed service that supports over 200,000 concurrent users, a tenfold increase over the previous year.</li>
+<li>Added monitoring and alerting to key services.</li>
+<li>Developed a zero user impact rollout and update strategy for storage backends (redis, kafka).</li>
+<li>Relied upon by leadership and multiple teams for SRE expertise.</li>
+</ul>
+
+<p><strong>Technical Environment:</strong> Google Cloud, Kubernetes, Golang, Python 2.7/3, CircleCI, Redis, Postgres, Kafka, Datadog, CircleCI</p>
+
+<h4>Spotify  <em>June 2016 to July 2017</em></h4>
+
+<h5>Senior Site Reliability Engineer</h5>
+
+<ul>
+<li>Worked on internal application that provided a uniform experience between GCP compute provisioning and on premise hardware provisioning.
+
+<ul>
+<li>Wrote Python app that consumes pubsub messages and restarts machines.</li>
+<li>Improved provisioning for physical machines by adding automated testing.</li>
+<li>Migrated Python web application stack to Docker for ease of local development.</li>
+</ul></li>
+<li>Drafted design documentation for large infrastructure changes, including reducing deltas in deployments to speed up DNS deployments.</li>
+<li>Member of weekly on-call rotation that is responsible for uptime of critical services developed by the team, including DNS and Google Cloud infrastructure.</li>
+</ul>
+
+<p><strong>Technical Environment:</strong> Google Cloud, Python 2.7/3, Puppet, Jenkins, Redis, Zookeeper, Helios.</p>
+
+<h4>Amplify Education <em>December 2012 to June 2016</em></h4>
 
 <h5>Systems Engineer</h5>
 
@@ -94,7 +134,7 @@
 
 <ul>
 <li>Wrote guidelines and documentation on application configuration and monitoring.</li>
-<li>Designed criteria for build-manifests, which describe sets of applications that have been tested together and can be released through the deployment pipeline together. </li>
+<li>Designed criteria for build-manifests, which describe sets of applications that have been tested together and can be released through the deployment pipeline together.</li>
 <li>Extended Mcollective as a deployment mechanism by using RabbitMQ, resulting in dependable and scalable push button deployments.</li>
 <li>Maintained Jenkins server and agents.</li>
 <li>Built Artifactory architecture which included S3 storage back-end, MySQL on Amazon RDS, and cross-region Artifactory replication for disaster recovery.</li>
@@ -105,7 +145,7 @@
 
 <ul>
 <li>Implemented role cookbooks to improve cookbook versioning and dependency management across a growing organization.</li>
-<li>Authored Knife plug-in to automate host termination including cleanup of Chef, Nagios, EC2 instances, Route 53 records, EBS volumes, and Elastic IPs. </li>
+<li>Authored Knife plug-in to automate host termination including cleanup of Chef, Nagios, EC2 instances, Route 53 records, EBS volumes, and Elastic IPs.</li>
 <li>Collaborated with developers to write Chef cookbooks to ensure applications were properly configured.</li>
 </ul></li>
 <li>Held production readiness reviews with developers to ensure applications met monitoring and configuration requirements.</li>
@@ -117,7 +157,7 @@
 <li>Provided support and expertise to development team in dealing with RabbitMQ.</li>
 </ul></li>
 <li>Administered ElasticSearch cluster which served as back-end to our logging infrastructure.</li>
-<li>Developed imaging workflow for customer hosted appliance for unattended provisioning at vendor&#39;s factories. </li>
+<li>Developed imaging workflow for customer hosted appliance for unattended provisioning at vendor&#39;s factories.</li>
 <li>Built HTTP content filtering farm on AWS using Dansguardian and Squid.</li>
 <li>Member of daily on-call rotation that is responsible for resolving outages reported by customers to Tier 3 and of a weekly on-call rotation that is responsible for uptime of critical services.</li>
 <li>Automated migration from Exchange to Google Apps using a combination of GAM and custom scripting.</li>
@@ -140,7 +180,7 @@
 
 <ul>
 <li>Created a front-end for Munki so that support engineers can manage software through a web portal.</li>
-<li>Developed an Ruby on Rails application to create help desk tickets. </li>
+<li>Developed an Ruby on Rails application to create help desk tickets.</li>
 </ul></li>
 <li>Documented procedures and best practices for various technical tasks performed by the technology team.</li>
 <li>Wrote Perl scripts to generate reports for librarians.</li>
