@@ -55,7 +55,7 @@ Spotify is music streaming company with over 100 million subscribers internation
 **Technical Environment:** Google Cloud, Python 2.7/3, Puppet, Jenkins, Redis, Zookeeper, Helios
 
 #### Amplify Education _December 2012 to June 2016_
-Amplify Education provided custom tablets to 20,000 students and teachers in classrooms across the US. As a Systems Engineer at Amplify, I designed the AWS architecture, and deployment pipelines, built backend infrastructure that managed 20,000 tablets.
+Amplify Education provided custom tablets to 20,000 students and teachers in classrooms across the US. As a Systems Engineer at Amplify, I designed the AWS architecture, and deployment pipelines, and built backend infrastructure that managed 20,000 tablets.
 ##### Systems Engineer
 - Built deployment pipeline for Java and JRuby web-applications.
   - Wrote guidelines and documentation on application configuration and monitoring.
