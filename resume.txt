@@ -20,6 +20,7 @@
 ### Experience
 
 #### FuboTV _August 2017 to Present_
+FuboTV delivers streaming television, with a focus on sport content to viewers in the US and abroad. As a Site Reliability Engineer at FuboTV, I built the infrastructure, and wrote backend code that allowed us to grow from 10,000 users to 500,000 users.
 ##### Staff Site Reliability Engineer _August 2019 to Present_
 - Migrated applications from in house python deployment tool to Helm.
 - Took initiative to discover root cause of an ever-growing Datadog bill, and worked with engineering teams to implement a solution saving the company $97,000 annually.
@@ -42,6 +43,7 @@
 **Technical Environment:** Google Cloud, Kubernetes, Golang, Python 2.7/3, CircleCI, Redis, Postgres, Kafka, Datadog, CircleCI
 
 #### Spotify  _June 2016 to July 2017_
+Spotify is music streaming company with over 100 million subscribers internationally. As an Site Reliability Engineer at Spotify, I wrote internal tooling, and managed a fleet of over 25,000 machines and was on-call for user facing systems.
 ##### Senior Site Reliability Engineer
 - Worked on internal application that provided a uniform experience between GCP compute provisioning and on premise hardware provisioning.
   - Wrote Python app that consumes pubsub messages and restarts machines.
@@ -50,9 +52,10 @@
 - Drafted design documentation for large infrastructure changes, including reducing deltas in deployments to speed up DNS deployments.
 - Member of weekly on-call rotation that is responsible for uptime of critical services developed by the team, including DNS and Google Cloud infrastructure.
 
-**Technical Environment:** Google Cloud, Python 2.7/3, Puppet, Jenkins, Redis, Zookeeper, Helios.
+**Technical Environment:** Google Cloud, Python 2.7/3, Puppet, Jenkins, Redis, Zookeeper, Helios
 
 #### Amplify Education _December 2012 to June 2016_
+Amplify Education is an educational technology company. I worked in the tablet division, which provided custom tablets to 20,000 students and teachers in classrooms across the US. As a Systems Engineer at Amplify, I designed the AWS architecture, and deployment pipelines, built backend infrastructure that managed 20,000 tablets.
 ##### Systems Engineer
 - Built deployment pipeline for Java and JRuby web-applications.
   - Wrote guidelines and documentation on application configuration and monitoring.
@@ -77,9 +80,10 @@
 - Member of daily on-call rotation that is responsible for resolving outages reported by customers to Tier 3 and of a weekly on-call rotation that is responsible for uptime of critical services.
 - Automated migration from Exchange to Google Apps using a combination of GAM and custom scripting.
 
-**Technical Environment:** AWS, Chef, Java, Play, JRuby, MySQL, Git, Stash, Jenkins, Artifactory, Graphite, Nagios, ELK, Kickstart.
+**Technical Environment:** AWS, Chef, Java, Play, JRuby, MySQL, Git, Stash, Jenkins, Artifactory, Graphite, Nagios, ELK, Kickstart
 
 #### Columbia University Libraries _January 2010 to December 2012_
+Columbia University Libraries are used by students, alumni, and staff for research. As a Systems Engineer at Columbia University Libraries, I managed all OS X machines in the library's digital labs, and wrote ruby on rail applications.
 ##### Systems Engineer
 - Managed all Apple Macintosh environments through Columbia University Libraries.
   - Built Imaging + Deployment pipeline for OSX machines using Deploy Studio.
@@ -91,16 +95,17 @@
 - Wrote Perl scripts to generate reports for librarians.
 - Maintained JIRA instance used to track help-desk tickets across Columbia University Libraries.
 
-**Technical Environment:** Ruby, Ruby on Rails, Perl, JIRA, Oracle Database, Bash, OSX, Munki, Deploy Studio.
+**Technical Environment:** Ruby, Ruby on Rails, Perl, JIRA, Oracle Database, Bash, OSX, Munki, Deploy Studio
 
 #### Columbia University Medical Center _June 2007 to December 2009_
+Columbia University Medical Center employs some of the best oncologists in the world. While at Columbia University Medical Center, I worked for an oncologist to digitize his records, and wrote various scripts to backup and manage patient data.
 ##### Systems Administrator and Programmer
 - Authored various patient file management scripts.
 - Automated file server backups and data archival.
 - Developed VB.NET programs to interface with scanner.
 - Wrote programs in VB.Net to automate the process of transitioning from paper records to digital records.
 
-**Technical Environment:** VBScript, VB.Net, Winbatch.</br>
+**Technical Environment:** VBScript, VB.Net, Winbatch</br>
 
 -----
 
